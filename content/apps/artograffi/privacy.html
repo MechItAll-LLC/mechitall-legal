@@ -1,0 +1,195 @@
+<div class="app-intro">
+<div class="updated">Effective date: October 14, 2026  ·  Last updated: October 14, 2026<br/>Applies to the artograffi app (com.artograffi.app) and its web pages</div>
+<div class="lede"><p>artograffi lets you draw in 3D space over your camera view, tag the result to the place you made it, and share it publicly, with friends, or with no one. This policy explains what information we collect, why, who we share it with, how long we keep it, and the rights and controls you have.</p>
+<p><strong>In short:</strong> we collect what the features need, we don't sell your data, we don't show ads, and you can delete your account and content at any time.</p></div>
+</div>
+
+<section id="artograffi-privacy-who">
+<h3>1. Who we are</h3>
+<p>MechItAll LLC, Florida, USA ("we," "us") makes artograffi and is the controller of the personal information described here. Contact: <a href="mailto:contact@mechitall.com">contact@mechitall.com</a>. This policy applies to the artograffi app and its web pages, not to other apps or sites we link to.</p>
+</section>
+
+<section id="artograffi-privacy-collect">
+<h3>2. Information we collect</h3>
+<h4>Account and profile</h4>
+<ul>
+<li>Sign-in details: email and password, a phone number, or your Google account (name, email and profile photo from Google, if you sign in that way). Passwords are handled by Firebase Authentication; we never see them.</li>
+<li>Profile details you add: display name, username, photo, background, bio, accent color, music, QR style, the "what do you want to use artograffi for" answer, an optional contact email, and a Ghostograffer alias if you use one.</li>
+<li>A unique account ID, the date you joined, which version of these legal documents you accepted and when, and settings such as notification preferences, muted and blocked users, and close artograffers.</li>
+</ul>
+<h4>Content you create</h4>
+<ul>
+<li>Drawings and meshtograffs (3D stroke coordinates), photos, bursts, videos, audio clips, titles, captions, access windows and visibility choices.</li>
+<li>Galas (collections), vault items and their files, community events you organize, and live drawing sessions.</li>
+</ul>
+<h4>Social activity</h4>
+<ul>
+<li>Messages (text, photos, voice notes, shared pieces, reactions), friend relationships, appraisals (likes), critiques (comments), favorites, views, and titles you earn.</li>
+<li>Reports you submit about content or users, and reports others submit about you.</li>
+</ul>
+<h4>Location</h4>
+<p>Precise location when you save a piece, look for nearby content, organize an event, or use proximity alerts. See section 3.</p>
+<h4>Camera, microphone and media</h4>
+<p>Used only when you use the related feature. See section 4.</p>
+<h4>Device, usage and diagnostics</h4>
+<ul>
+<li>A push-notification token for your device.</li>
+<li>App usage analytics (screens opened and specific actions) via Firebase Analytics, linked to an app-instance ID.</li>
+<li>Crash and performance diagnostics via Firebase Crashlytics and Performance Monitoring: device model, OS and app version, technical logs and stack traces. To help us fix problems, crash reports may also include your account ID, display name and username, and an approximate location rounded to about 1 km.</li>
+<li>App integrity signals from Google Play Integrity / Firebase App Check, used to confirm requests come from the real app.</li>
+</ul>
+<h4>Stored only on your device</h4>
+<p>Preferences such as theme, language, accessibility options, chat wallpapers you pick, brush presets, and app lock settings (your PIN is stored only as a salted hash). Biometric unlock is handled by your phone; we never receive fingerprint or face data.</p>
+</section>
+
+<section id="artograffi-privacy-location">
+<h3>3. Location, specifically</h3>
+<ul>
+<li><strong>When:</strong> the app asks for location the first time a feature needs it. You can allow it while using the app, allow it once, or decline. Location features stop working until you allow it, but the rest of the app still works.</li>
+<li><strong>Tagging:</strong> saving a piece stores the coordinates where you saved it. To show a friendly place name ("near Main Street"), those coordinates are sent once to OpenStreetMap's Nominatim service and the resulting place name is stored with the piece. Our servers also send the coordinates (never your name or account) to Open-Meteo for the weather at that moment and to Wikipedia for the nearest landmark, and store both with the piece.</li>
+<li><strong>Event forecasts:</strong> an event's location and date are sent from our servers to Open-Meteo to show its weather forecast and sunset time.</li>
+<li><strong>Nearby:</strong> to find nearby art, hotspots, live sessions and events, your current location is sent to our servers, which return only what's within range. Who can see what is enforced on our servers.</li>
+<li><strong>Event address search:</strong> when you organize an event and search for an address, what you type is sent to OpenStreetMap's Nominatim service to find matching places.</li>
+<li><strong>Proximity alerts:</strong> if vault, community-event or audio-guide alerts are on, the app checks your position while it's open, and shows a small radar symbol on screen while it does. Only if you turn on "Keep watching in the background" (off by default) does it keep checking while the app is in the background; Android then requires an ongoing "Watching for nearby vaults &amp; events" notification. We don't use the "Allow all the time" background location permission, and checking stops if you turn the alerts off or close the app.</li>
+<li>We don't try to figure out your home address, and we don't use location for advertising.</li>
+</ul>
+</section>
+
+<section id="artograffi-privacy-camera">
+<h3>4. Camera, microphone and media, specifically</h3>
+<ul>
+<li><strong>AR drawing:</strong> the live camera feed is processed on your device (Google ARCore for tracking, MediaPipe for hand and body tracking). The live feed isn't uploaded; only what you save is.</li>
+<li><strong>Photos, bursts and videos</strong> you capture and choose to save are uploaded.</li>
+<li><strong>Trace image and Wireframe capture</strong> detect edges on your device and save the resulting strokes, not the source image.</li>
+<li><strong>Upload media</strong> uploads the files you pick from your device.</li>
+<li><strong>Microphone</strong> is used only while you record a voice message or an audio clip. The app doesn't listen in the background.</li>
+<li><strong>Voice messages</strong> up to 60 seconds are sent to Google Cloud Speech-to-Text after sending, and the transcript is stored with the message so everyone in the chat can read it.</li>
+<li><strong>QR scanning</strong> processes the camera image on your device.</li>
+</ul>
+</section>
+
+<section id="artograffi-privacy-automated-review">
+<h3>5. Automated content review</h3>
+<p>To keep the community safe, some content is analyzed automatically after you save or post it:</p>
+<ul>
+<li>Photos, thumbnails, previews, profile pictures and backgrounds, and photos sent in messages are sent to Google Cloud Vision (SafeSearch), and videos to Google Cloud Video Intelligence, which return likelihood scores for nudity, sexual and violent content.</li>
+<li>Critiques (comments) and the text of messages, including photo captions, are sent to Google Cloud Natural Language text moderation, which returns categories such as "sexual," "derogatory" and "toxic." Messages are checked only to enforce our rules; the text isn't used for anything else.</li>
+</ul>
+<p>Pictures of saved pieces are also described automatically: Google Cloud Vision labels what they show (for example "mural" or "dog") so pieces can be found by search, and Anthropic's Claude writes a one-sentence description for screen readers and, when you tap Suggest titles, title ideas. Anthropic doesn't use this content to train its models.</p>
+<p>A flagged photo or video is hidden from others until an administrator reviews it, and the result (flagged, reason, decision) is stored with it. A flagged critique is removed, and a flagged message is replaced with a notice that it was removed. Google processes this content on our behalf to provide these services. You can ask a person to review any automated decision by emailing <a href="mailto:contact@mechitall.com">contact@mechitall.com</a>.</p>
+</section>
+
+<section id="artograffi-privacy-translation">
+<h3>6. Translation</h3>
+<ul>
+<li><strong>Messages:</strong> translated entirely on your device with Google ML Kit. Message text isn't sent anywhere to be translated.</li>
+<li><strong>Critiques (comments):</strong> when you tap Translate, that comment's text is sent to Google Cloud Translation and the translation is returned to you. We don't store the translation.</li>
+</ul>
+</section>
+
+<section id="artograffi-privacy-use">
+<h3>7. How we use information, and our legal bases</h3>
+<div class="table-wrap"><table>
+<tr><th>Purpose</th><th>Legal basis (EU/UK GDPR)</th></tr>
+<tr><td>Run your account and the app's features: drawing, saving, sharing, messaging, nearby discovery, notifications you've opted into</td><td>Performance of our contract with you (these Terms)</td></tr>
+<tr><td>Enforce visibility, location gating, blocks and mutes</td><td>Contract</td></tr>
+<tr><td>Location features</td><td>Contract, and your device permission choice</td></tr>
+<tr><td>Automated and human content moderation; handling reports; preventing abuse, fraud and spam; app integrity checks</td><td>Legitimate interests in keeping users and the service safe; legal obligations where they apply</td></tr>
+<tr><td>Crash reports, performance and usage analytics</td><td>Legitimate interests in keeping the app working and improving it</td></tr>
+<tr><td>Recording that you accepted our Terms and policies</td><td>Legitimate interests and legal obligations</td></tr>
+<tr><td>Responding to your requests and legal requirements</td><td>Legal obligations</td></tr>
+</table></div>
+<p>We don't sell personal information, don't share it for cross-context behavioral advertising, don't show ads, and don't use your content to train third-party AI models.</p>
+</section>
+
+<section id="artograffi-privacy-sharing">
+<h3>8. When information is shared</h3>
+<h4>With other people, as you choose</h4>
+<p>Content is shown according to the visibility you pick. Your display name, username and profile photo are visible to people you interact with (or your alias, in Ghostograffer mode). Public web pages for a profile or piece (for example, opened from a QR code) show the details visible on that page. Anything set to "Only me" isn't shown to anyone else.</p>
+<h4>Service providers</h4>
+<div class="table-wrap"><table>
+<tr><th>Provider</th><th>What for</th></tr>
+<tr><td>Google (Firebase and Google Cloud)</td><td>Sign-in, database, file storage, cloud functions, push notifications, Analytics, Crashlytics, Performance, Remote Config, App Check, ARCore Cloud Anchors, content-safety review, image labels, voice-message transcripts, translation of comments</td></tr>
+<tr><td>Anthropic (Claude)</td><td>Image descriptions for screen readers and title suggestions (receives the piece's picture and its labels and place name)</td></tr>
+<tr><td>Open-Meteo and the Wikimedia Foundation (Wikipedia)</td><td>Weather and nearest landmark for a saved piece, and event forecasts (receive coordinates and, for events, the date; sent from our servers, not your device)</td></tr>
+<tr><td>OpenStreetMap Foundation (Nominatim, map tiles)</td><td>Place names, address search, map display (receives coordinates or search text and your IP address)</td></tr>
+<tr><td>Our email delivery provider</td><td>Sending verification and account-deletion confirmation emails</td></tr>
+</table></div>
+<p>These providers process data to provide their services to us, under their own data-protection terms.</p>
+<h4>Legal and safety</h4>
+<p>We may disclose information if required by law, or if we believe in good faith it's needed to protect someone's safety, prevent fraud or abuse, or protect our rights. Apparent child sexual exploitation material is reported to NCMEC as required by U.S. law.</p>
+<h4>Business transfers</h4>
+<p>If MechItAll is involved in a merger, acquisition or sale of assets, information may be transferred as part of that deal, and this policy will continue to apply to it.</p>
+</section>
+
+<section id="artograffi-privacy-retention">
+<h3>9. How long we keep information</h3>
+<div class="table-wrap"><table>
+<tr><th>Information</th><th>Kept</th></tr>
+<tr><td>Account, profile and your content</td><td>Until you delete it or your account</td></tr>
+<tr><td>Messages you sent</td><td>Remain in the conversation for the other participants after you delete your account</td></tr>
+<tr><td>Guest (anonymous) sessions that never become an account</td><td>Deleted automatically after 3 days of inactivity</td></tr>
+<tr><td>Content flagged by moderation, and reports</td><td>As long as needed to review them and protect users, then deleted</td></tr>
+<tr><td>Crash reports (Crashlytics)</td><td>Around 90 days</td></tr>
+<tr><td>Analytics data</td><td>Up to 14 months</td></tr>
+<tr><td>Legal-acceptance records and account-deletion requests</td><td>As long as needed to show compliance</td></tr>
+</table></div>
+<p>When you delete your account, we delete your profile, content, galas, vault items, engagement and relationships, and remove you from conversations. A few copies may remain briefly in caches or in other users' previously received messages.</p>
+</section>
+
+<section id="artograffi-privacy-rights">
+<h3>10. Your rights</h3>
+<p>Depending on where you live, you may have the right to:</p>
+<ul>
+<li>access the personal information we hold about you and get a copy, including in a portable format;</li>
+<li>correct inaccurate information;</li>
+<li>delete your information;</li>
+<li>restrict or object to certain processing, including processing based on legitimate interests;</li>
+<li>withdraw consent where we rely on it (for example, by turning off a permission);</li>
+<li>not be discriminated against for exercising these rights; and</li>
+<li>complain to your data-protection authority.</li>
+</ul>
+<p>U.S. state privacy laws (such as California's) give similar rights. We don't sell or share personal information as those laws define it.</p>
+<p>Many of these you can do yourself in the app (see section 12). For anything else, email <a href="mailto:contact@mechitall.com">contact@mechitall.com</a>. We may need to verify that the request is yours, and we'll respond within the time the law requires (generally 30 to 45 days). You can appeal a decision by replying to our response.</p>
+</section>
+
+<section id="artograffi-privacy-controls">
+<h3>11. Your controls</h3>
+<div class="table-wrap"><table>
+<tr><th>What</th><th>Where</th></tr>
+<tr><td>Location, camera, microphone, notifications</td><td>Phone Settings → Apps → artograffi → Permissions</td></tr>
+<tr><td>Who can see a piece</td><td>The piece's own visibility settings</td></tr>
+<tr><td>Post under an alias</td><td>Settings → Ghostograffer mode</td></tr>
+<tr><td>Block, mute or report someone</td><td>Their profile, or the message/piece menu</td></tr>
+<tr><td>Notification categories and proximity alerts</td><td>Settings → Notifications</td></tr>
+<tr><td>Edit profile and personal information</td><td>Profile → Edit, and Settings → Personal information</td></tr>
+<tr><td>Delete a piece</td><td>The piece's own page</td></tr>
+<tr><td>Download a copy of your data</td><td>Settings → Download my data</td></tr>
+<tr><td>Delete your account</td><td>Settings → Delete account, or the <a href="{{link:delete}}">deletion page</a></td></tr>
+</table></div>
+</section>
+
+<section id="artograffi-privacy-children">
+<h3>12. Children</h3>
+<p>artograffi is only for people 16 and older, and we don't knowingly collect personal information from anyone younger. When you first open the app we ask for your date of birth to check this. We don't store the date itself: we only record that you confirmed the minimum age, on your device and on your profile. If someone enters an age under 16, the app stays locked on that device. If you believe someone under 16 has given us information, contact <a href="mailto:contact@mechitall.com">contact@mechitall.com</a> and we'll delete it.</p>
+</section>
+
+<section id="artograffi-privacy-security">
+<h3>13. Security</h3>
+<p>We encrypt data in transit, enforce access rules on our servers (not just in the app), verify app integrity, and limit who can access data. You can add a PIN or biometric lock in the app. No system is perfectly secure, so we can't guarantee absolute security. If we learn of a breach affecting you, we'll notify you as the law requires.</p>
+</section>
+
+<section id="artograffi-privacy-transfers">
+<h3>14. International transfers</h3>
+<p>We're based in the United States, and our providers may process data in the U.S. and other countries. Where EU or UK law requires, transfers rely on appropriate safeguards such as the European Commission's Standard Contractual Clauses or the EU-U.S. Data Privacy Framework commitments of our providers.</p>
+</section>
+
+<section id="artograffi-privacy-changes">
+<h3>15. Changes to this policy</h3>
+<p>We'll update the "Last updated" date when we change this policy. For material changes, we'll notify you in the app and ask you to review the new version.</p>
+</section>
+
+<section id="artograffi-privacy-contact">
+<h3>16. Contact</h3>
+<p>MechItAll LLC, Florida, USA. Email: <a href="mailto:contact@mechitall.com">contact@mechitall.com</a></p>
+</section>

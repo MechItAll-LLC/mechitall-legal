@@ -1,0 +1,52 @@
+<div class="app-intro">
+<div class="updated">Effective date: October 14, 2026  ·  Last updated: October 14, 2026<br/>Applies to the artograffi app (com.artograffi.app) and its web pages</div>
+<div class="lede"><p>You can delete your artograffi account and its data at any time. The fastest way is inside the app. If you can't open the app, use the form on this page.</p></div>
+</div>
+
+<section id="artograffi-delete-in-app">
+<h3>1. Delete in the app</h3>
+<ol>
+<li>Open artograffi and sign in.</li>
+<li>Go to Profile → Settings (gear icon).</li>
+<li>Tap <strong>Delete account</strong> and confirm.</li>
+</ol>
+<p>Deletion starts right away. If your account has a real email address, we send a confirmation email.</p>
+</section>
+
+<section id="artograffi-delete-form">
+<h3>2. Request deletion without the app</h3>
+<p>Enter the email address or phone number you sign in with. We'll verify the account belongs to you (we may contact you) and complete the deletion within 30 days.</p>
+<form action="https://us-central1-doodle-86b98.cloudfunctions.net/requestAccountDeletion" class="form-card" method="POST">
+<input name="lang" type="hidden" value="en"/>
+<div aria-hidden="true" style="position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden"><label for="website">Website</label><input autocomplete="off" id="website" name="website" tabindex="-1" type="text"/></div>
+<label for="identifier">Email or phone number on your account</label>
+<input autocomplete="email" id="identifier" maxlength="200" name="identifier" placeholder="you@example.com or +1 555 123 4567" required="" type="text"/>
+<label for="details">Anything that helps us find the account (optional)</label>
+<textarea id="details" maxlength="2000" name="details" placeholder="For example, your display name or username"></textarea>
+<div class="hint">Google sign-in? Enter your Google email address.</div>
+<button class="btn block" type="submit">Request deletion</button>
+</form>
+</section>
+
+<section id="artograffi-delete-deleted">
+<h3>3. What gets deleted</h3>
+<ul>
+<li>Your sign-in account, profile, username and contact email.</li>
+<li>Every piece you made (drawings, meshtograffs, photos, videos, audio) and its files, critiques and appraisals.</li>
+<li>Your galas, vault items and vault files, and events you organized.</li>
+<li>The appraisals, critiques, favorites and views you left on other people's pieces.</li>
+<li>Your friendships, blocks, notifications and settings.</li>
+<li>You're removed from your conversations and live sessions.</li>
+</ul>
+</section>
+
+<section id="artograffi-delete-kept">
+<h3>4. What may be kept, and for how long</h3>
+<ul>
+<li><strong>Messages you sent</strong> stay in the conversation for the other people in it, so their history still makes sense.</li>
+<li>Copies other people already saved, screenshotted or received from you.</li>
+<li>Crash reports (about 90 days) and analytics data (up to 14 months), which aren't used to identify you after deletion.</li>
+<li>Records we need for legal, safety or fraud-prevention reasons, such as reports about serious violations, your deletion request, and records of the legal terms you accepted, kept only as long as necessary.</li>
+</ul>
+<p>Questions? Email <a href="mailto:contact@mechitall.com">contact@mechitall.com</a>.</p>
+</section>

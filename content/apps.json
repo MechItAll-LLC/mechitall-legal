@@ -1,0 +1,70 @@
+{
+  "_comment": "One entry per app, in the order they appear on every page. To add an app: add an entry here, create content/apps/<id>/ with at least terms.html and privacy.html, run python3 tools/build.py.",
+  "apps": [
+    {
+      "id": "artograffi",
+      "name": "artograffi",
+      "about": "AR app for drawing in 3D space and leaving art in real places",
+      "package": "com.artograffi.app",
+      "platforms": "Android",
+      "min_age": 16,
+      "home": "https://doodle-86b98.web.app/join.html",
+      "translations": {"Español": "https://doodle-86b98.web.app/privacy-policy.es.html", "Deutsch": "https://doodle-86b98.web.app/privacy-policy.de.html", "Français": "https://doodle-86b98.web.app/privacy-policy.fr.html", "Português": "https://doodle-86b98.web.app/privacy-policy.pt.html"}
+    },
+    {
+      "id": "bewildoor",
+      "name": "Bewildoor",
+      "about": "Puzzle game in an endless maze of rooms and doors",
+      "package": "com.bewildoor.game",
+      "platforms": "Android, Windows, web",
+      "min_age": 13,
+      "home": "https://bewildoor-842e4.web.app/"
+    },
+    {
+      "id": "bgrc",
+      "name": "BGRC",
+      "about": "Simulation game where bots live, mate, evolve and build kingdoms",
+      "package": "com.mechitall.bgrc",
+      "platforms": "Web, Android, Windows, macOS, Linux",
+      "min_age": 13,
+      "home": "https://mechitall-llc.github.io/bgrc-releases/"
+    },
+    {
+      "id": "holds",
+      "name": "H.O.L.D.S.",
+      "about": "Heroes of Legendary Dungeons Sought: open-world online RPG",
+      "package": "com.holds.game",
+      "platforms": "Android, Windows, web",
+      "min_age": 13,
+      "home": "https://holds-60f4e.web.app/"
+    },
+    {
+      "id": "low-flying-ducks",
+      "name": "Low Flying Ducks",
+      "about": "One-thumb arcade shooter",
+      "package": "com.lowflyingducks.game",
+      "platforms": "Android",
+      "min_age": 13,
+      "home": "https://low-flying-ducks.web.app/"
+    },
+    {
+      "id": "polyloqui",
+      "name": "Polyloqui",
+      "about": "Voice rooms, live captions and translation for loud places",
+      "package": "",
+      "platforms": "Android, web",
+      "min_age": 13,
+      "home": "https://earshot-9vub.onrender.com/"
+    },
+    {
+      "id": "questeryng",
+      "name": "Questeryng",
+      "about": "Social app for adults to meet people nearby through activities and side quests",
+      "package": "",
+      "platforms": "Android, web",
+      "min_age": 18,
+      "home": "https://questeryng.web.app/",
+      "translations": {"Français": "https://questeryng.web.app/fr/privacy", "Español": "https://questeryng.web.app/es/privacy", "Português": "https://questeryng.web.app/pt/privacy", "日本語": "https://questeryng.web.app/ja/privacy", "한국어": "https://questeryng.web.app/ko/privacy"}
+    }
+  ]
+}

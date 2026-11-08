@@ -1,0 +1,85 @@
+:root{
+  --bg:#F6F5F2; --surface:#FFFFFF; --surface-2:#ECEAE4;
+  --text:#1C1D22; --text-muted:#5B5D66; --border:#DCD9D1;
+  --accent:#C2410C; --accent-ink:#9A3412;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#121317; --surface:#1B1C22; --surface-2:#24252D;
+    --text:#EEEDE9; --text-muted:#A6A7B0; --border:#33343D;
+    --accent:#FB923C; --accent-ink:#FDBA74;
+  }
+}
+*{box-sizing:border-box}
+html,body{margin:0; padding:0}
+body{
+  background:var(--bg); color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  line-height:1.65; font-size:16px;
+}
+h1,h2,h3,h4{letter-spacing:-0.01em; text-wrap:balance}
+.wrap{max-width:780px; margin:0 auto; padding:40px 16px 72px}
+.top{margin-bottom:8px}
+.wordmark{font-weight:800; font-size:1.5rem; color:var(--text); text-decoration:none; letter-spacing:-0.02em}
+.wordmark::after{content:"."; color:var(--accent)}
+.kicker{color:var(--text-muted); font-size:0.78rem; margin-top:2px; text-transform:uppercase; letter-spacing:0.08em; font-weight:700}
+.crumb{font-size:0.9rem; color:var(--text-muted); margin-top:18px}
+.crumb a{color:var(--text-muted)}
+h1.title{font-size:2rem; margin:18px 0 6px; line-height:1.2}
+.updated{color:var(--text-muted); font-size:0.92rem; margin-bottom:28px}
+.lede,.app-intro{
+  background:var(--surface); border:1px solid var(--border);
+  border-radius:12px; padding:18px 20px; margin-bottom:28px;
+}
+.lede p,.app-intro p{margin:0 0 10px} .lede p:last-child,.app-intro p:last-child{margin-bottom:0}
+.app-intro{background:transparent; border-style:dashed; font-size:0.96rem}
+.app-intro .updated,.app-intro .meta,.app-intro .sub{margin:0 0 10px; font-size:0.9rem; color:var(--text-muted)}
+nav.toc{background:var(--surface-2); border-radius:12px; padding:18px 22px; margin-bottom:40px}
+nav.toc .toc-title{font-weight:700; font-size:0.82rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.06em; margin-bottom:8px}
+nav.toc ol{margin:0; padding-left:1.3em; columns:2; column-gap:28px}
+nav.toc li{margin-bottom:5px; break-inside:avoid}
+nav.toc a{color:var(--accent-ink); text-decoration:none; font-size:0.94rem}
+nav.toc a:hover{text-decoration:underline}
+@media (max-width:560px){ nav.toc ol{columns:1} }
+.part-label{
+  font-size:0.78rem; font-weight:800; text-transform:uppercase; letter-spacing:0.1em;
+  color:var(--accent-ink); border-top:2px solid var(--accent); padding-top:10px; margin:48px 0 20px;
+}
+section{margin-bottom:34px; scroll-margin-top:16px}
+h2{font-size:1.35rem; margin:0 0 8px}
+section.app{
+  background:var(--surface); border:1px solid var(--border); border-radius:14px;
+  padding:22px 22px 6px; margin-bottom:40px;
+}
+section.app > h2{display:flex; flex-direction:column; gap:2px; margin-bottom:16px}
+section.app .app-name{font-size:1.5rem}
+section.app .app-about{font-size:0.92rem; font-weight:400; color:var(--text-muted)}
+section.app section{margin-bottom:26px}
+h3{font-size:1.12rem; margin:0 0 6px}
+h4{font-size:1rem; margin:16px 0 6px}
+p{margin:0 0 14px}
+ul,ol{margin:0 0 14px; padding-left:1.4em}
+li{margin-bottom:6px}
+.muted{color:var(--text-muted); font-size:0.9rem}
+.langs{font-size:0.9rem; color:var(--text-muted)}
+ul.doclist li{margin-bottom:8px}
+pre{background:var(--surface-2); border-radius:10px; padding:14px 16px; white-space:pre-wrap; overflow-wrap:anywhere; font-size:0.85rem}
+.table-wrap{overflow-x:auto; margin:14px 0 20px}
+table{width:100%; border-collapse:collapse; font-size:0.92rem; background:var(--surface); border:1px solid var(--border); display:block; overflow-x:auto}
+section.app table{display:table}
+@media (max-width:640px){ section.app table{display:block; overflow-x:auto} }
+th,td{text-align:left; padding:9px 11px; border-bottom:1px solid var(--border); vertical-align:top}
+th{background:var(--surface-2); font-weight:700; font-size:0.78rem; text-transform:uppercase; letter-spacing:0.04em; color:var(--text-muted)}
+tr:last-child td{border-bottom:none}
+a{color:var(--accent-ink); overflow-wrap:anywhere}
+a:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+form.form-card{background:var(--surface-2); border-radius:12px; padding:16px; margin:12px 0 18px; display:grid; gap:10px}
+form.form-card input,form.form-card textarea{font:inherit; padding:9px 10px; border-radius:8px; border:1px solid var(--border); background:var(--surface); color:var(--text); width:100%}
+form.form-card button{font:inherit; font-weight:700; padding:10px 14px; border:0; border-radius:8px; background:var(--accent); color:#fff; cursor:pointer; justify-self:start}
+form.form-card .hp, form.form-card [aria-hidden="true"]{position:absolute; left:-9999px}
+footer.legal-nav{color:var(--text-muted); font-size:0.88rem; text-align:center; margin-top:56px; border-top:1px solid var(--border); padding-top:20px}
+footer.legal-nav nav{display:flex; flex-wrap:wrap; justify-content:center; gap:6px 16px; margin-bottom:10px}
+footer.legal-nav a{color:var(--text-muted)}
+footer.legal-nav a[aria-current="page"]{color:var(--accent-ink); font-weight:700}
+.app-intro .lede{background:none; border:0; padding:0; margin:0}
+@media (max-width:560px){ section.app{padding:16px 14px 4px} .app-intro{padding:14px} }

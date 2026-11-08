@@ -1,0 +1,9 @@
+{
+  "artograffi": {"root": "/mnt/user-data/uploads/dev/artograffi/public", "docs": {"terms": "terms-of-service.html", "privacy": "privacy-policy.html", "delete": "account-deletion.html", "guidelines": "community-guidelines.html", "safety": "safety.html"}},
+  "bewildoor": {"root": "/mnt/user-data/uploads/dev/bewildoor/hosting/public", "docs": {"terms": "terms.html", "privacy": "privacy.html", "delete": "account-deletion.html", "licenses": "licenses.html"}},
+  "low-flying-ducks": {"root": "/mnt/user-data/uploads/dev/low_flying_ducks/hosting/public", "docs": {"terms": "terms.html", "privacy": "privacy.html", "delete": "account-deletion.html"}},
+  "polyloqui": {"root": "/mnt/user-data/uploads/dev/polyloqui/public", "docs": {"terms": "terms.html", "privacy": "privacy.html", "licenses": "licenses.html"}},
+  "questeryng": {"root": "/mnt/user-data/uploads/dev/questeryng/hosting/public", "docs": {"terms": "terms.html", "privacy": "privacy.html", "delete": "delete-account.html", "guidelines": "guidelines.html", "safety": "safety.html", "child-safety": "child-safety.html"}},
+  "holds": {"root": "/mnt/user-data/uploads/dev/holds/hosting/public", "docs": {"terms": "terms.html", "privacy": "privacy.html", "delete": "account-deletion.html", "guidelines": "community-guidelines.html", "child-safety": "child-safety.html", "licenses": "licenses.html"}},
+  "bgrc": {"root": "/home/claude/mechitall-llc/bgrc-releases", "docs": {"terms": "terms.html", "privacy": "privacy.html", "delete": "account-deletion.html"}}
+}

@@ -1,0 +1,150 @@
+<div class="app-intro">
+<p class="sub">Last updated: 21 October 2026</p>
+<p>Polyloqui is built so that as little as possible leaves your phone. Speech recognition,
+translation and voices run on your device whenever it can do them. There are no accounts, no
+advertising and no tracking. This policy explains exactly what happens to your data in the
+Polyloqui app for Android and in the Polyloqui web version, and who else is involved.</p>
+</div>
+
+<section id="polyloqui-privacy-what-stays-on-your-device">
+<h3>What stays on your device</h3>
+<ul>
+<li><b>Speech recognition and translation.</b> The speech and translation models you choose to download
+    run on your phone. When they are available, what you say is turned into text and translated on
+    the phone itself.</li>
+<li><b>The interpreter.</b> Fully on the phone once its language packs are downloaded; nothing is sent anywhere.</li>
+<li><b>Natural voices.</b> Read-aloud voices you download speak on the phone.</li>
+<li><b>Voice setup.</b> The sentences you read during voice setup are kept in memory only while the
+    screen is open, to measure accuracy and your voice level. They are never saved or sent.</li>
+<li><b>Settings and saved items.</b> Your name, languages, saved phrases, your permanent room code's
+    secret, and a random device key (used only to put you back in your own place after a crash) are
+    stored on your device.</li>
+<li><b>Saved conversations.</b> A conversation is only saved when you tap "Save the conversation",
+    and then only where you choose to share or store it.</li>
+</ul>
+</section>
+
+<section id="polyloqui-privacy-voice-rooms">
+<h3>Voice rooms</h3>
+<ul>
+<li><b>Your voice goes to the other people in the room.</b> In rooms of up to 8 people it goes
+    directly from phone to phone, encrypted (WebRTC). When phones cannot reach each other directly,
+    the encrypted audio passes through a relay (Cloudflare). In larger rooms and broadcasts it passes,
+    encrypted in transit, through a media server (LiveKit Cloud). Neither we nor these services
+    record it.</li>
+<li><b>Everything said in a room is written down for everyone in that room.</b> This is how
+    Polyloqui works: each person's device turns their speech into text and the text is shown to all
+    members of the room, so everyone can follow and translate. The room is told this when you join.
+    The text passes through our room server to reach the others; it is not stored there.</li>
+<li><b>The room server</b> (hosted on Render) introduces the phones to each other and runs the room:
+    it handles the name you type, the room code, who is muted or speaking, the language you speak and
+    read, and the transcript lines on their way to the other members. It keeps this in memory only
+    while the room is open. It also sees your IP address, which it keeps in memory for a short time
+    to limit abuse. It writes nothing about you to disk.</li>
+<li><b>Hosts</b> can mute and remove people, lock the room and decide who comes in. Offensive words
+    are hidden in captions unless the host turns that off; this happens on each device.</li>
+<li><b>Blocking</b> someone happens only on your device: you stop hearing them and seeing their lines.</li>
+<li><b>Reports.</b> If you report someone, we receive the reason you chose, your name and theirs as
+    shown in the room, the room code, and up to their last 20 lines as your device showed them. This
+    goes to our server's log and to our moderation channel, and is used only to deal with the report
+    and prevent abuse. The reported person is not told who reported them.</li>
+<li><b>Feedback.</b> If you send feedback from the app, we receive what you wrote, whether it is an
+    idea or a problem, and the app version. It goes to our server's log and our moderation channel.
+    Nothing else is attached; add how to reach you only if you want an answer.</li>
+</ul>
+</section>
+
+<section id="polyloqui-privacy-when-a-cloud-service-helps">
+<h3>When a cloud service helps</h3>
+<p>If a device cannot do a task itself (mostly web browsers without downloaded models), the room
+server can ask a cloud service to do it. Only the text or audio needed for that task is sent. Each
+service handles it under its own privacy policy (DeepL, Microsoft, Deepgram, Google, Cloudflare, Anthropic); where a
+service offers a setting not to use our requests to improve its products, it is switched on:</p>
+<ul>
+<li><b>Translation</b> of transcript lines: DeepL or Cloudflare Workers AI, or another phone in the room that has the Polyloqui app.</li>
+<li><b>Natural read-aloud voices</b> in the web version: Microsoft Azure Speech (the text to be spoken is sent).</li>
+<li><b>Speech recognition</b> as a last resort in the web version: a speech service such as Deepgram
+    or Google Cloud or Cloudflare Workers AI, if enabled (short audio clips of your own speech are sent). The web version can
+    also use your browser's own speech recognition; in Chrome that sends audio to Google.</li>
+<li><b>Summaries</b>, only when someone in the room taps "Summary": made on that phone when it has
+    the smarter-translation model; otherwise, if the server offers summaries, the room's transcript is
+    sent to Cloudflare Workers AI or Anthropic (Claude) to write it.</li>
+</ul>
+</section>
+
+<section id="polyloqui-privacy-on-the-phone-only">
+<h3>On the phone only</h3>
+<ul>
+<li><b>Translating a sign or menu:</b> the photo is read on the phone (Google ML Kit text recognition,
+    which runs on the device) and deleted straight after; it is never uploaded.</li>
+<li><b>Live captions</b> and <b>name alerts</b> run on the phone; nothing is recorded or sent. When the
+    phone hears your name it buzzes, and so does your watch if one is connected.</li>
+<li><b>Your phrasebook</b> (lines you save from the interpreter) stays on the phone.</li>
+<li><b>NFC tags:</b> writing a room link to a tag happens on the phone; the tag holds only the link.</li>
+<li><b>Ratings:</b> the app may ask Google Play to show its rating card once; we do not see your rating.</li>
+</ul>
+</section>
+
+<section id="polyloqui-privacy-the-android-app-also-uses">
+<h3>The Android app also uses</h3>
+<ul>
+<li><b>Firebase Crashlytics</b> (Google) to receive crash reports: what failed and where in the app,
+    the app version, the phone model and Android version. Crash reports never contain what anyone said.</li>
+<li><b>Firebase Cloud Messaging</b> (Google), only if you turn on "Tell me when this room opens":
+    your phone gets a notification token and subscribes to that room's notifications.</li>
+<li><b>Google Play Billing</b>, only if you buy Polyloqui Pro: Google handles the payment under its
+    own privacy policy; we never receive your card or payment details. The app asks Google Play
+    whether you have Pro and remembers the answer on your phone. To check that a purchase is real,
+    the app sends its purchase token to our server, which asks Google Play about it and gives the app
+    a signed pass; we do not keep the token.</li>
+<li><b>Google ML Kit</b> for on-device translation and language identification. Its language
+    models are downloaded from Google.</li>
+</ul>
+</section>
+
+<section id="polyloqui-privacy-downloads">
+<h3>Downloads</h3>
+<p>Speech models and voices are downloaded, when you choose them, from Hugging Face and GitHub (and
+for the web version possibly through our server). Those services see your IP address as with any
+download.</p>
+</section>
+
+<section id="polyloqui-privacy-error-reports-from-the-web-version">
+<h3>Error reports from the web version</h3>
+<p>If the web version hits an error, it sends our server the error message, the file and line, and
+your browser type, so we can fix it. It never sends what anyone said.</p>
+</section>
+
+<section id="polyloqui-privacy-permissions-the-app-asks-for">
+<h3>Permissions the app asks for</h3>
+<ul>
+<li><b>Microphone</b>: to carry your voice in rooms and to hear you in the interpreter and in
+    "Hear better". Used only while you use those features.</li>
+<li><b>Camera</b>: only to scan a room's QR code. Images are not saved or sent.</li>
+<li><b>Notifications</b>: to show that a room is active (so it keeps working with the screen off)
+    and, if you ask for it, when a room opens.</li>
+<li><b>Bluetooth</b>: to use your Bluetooth earbuds.</li>
+</ul>
+</section>
+
+<section id="polyloqui-privacy-children">
+<h3>Children</h3>
+<p>Polyloqui is not directed at children under 13, and we do not knowingly collect data from them.</p>
+</section>
+
+<section id="polyloqui-privacy-how-long-data-is-kept">
+<h3>How long data is kept</h3>
+<p>Room data exists only while the room is open. Nothing about you is stored on our server, except
+reports, which we keep for up to 90 days after the report is dealt with. Crash
+reports are kept by Firebase for up to 90 days. Data on your device stays until you delete it or
+uninstall the app.</p>
+</section>
+
+<section id="polyloqui-privacy-your-rights">
+<h3>Your rights</h3>
+<p>Because we do not store data about you, there is normally nothing for us to give you or delete.
+You can delete everything on your device by clearing the app's data or uninstalling it. If you are
+in the European Union or another region with data protection laws, you have rights to access,
+correct, delete and object to processing of your personal data, and to complain to your data
+protection authority. Email contact@mechitall.com.</p>
+</section>
