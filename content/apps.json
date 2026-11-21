@@ -83,7 +83,7 @@
    "about": "One optional account to sign in to MechItAll apps",
    "platforms": "Web; sign-in for our Android, PC and web apps",
    "min_age": 13,
-   "home": "https://mechitone.mechitall.workers.dev/"
+   "home": "https://account.mechitall.com/"
   }
  ]
 }

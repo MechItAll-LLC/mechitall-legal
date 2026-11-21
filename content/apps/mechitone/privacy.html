@@ -1,7 +1,7 @@
 <div class="app-intro">
-<div class="updated">Effective date: November 20, 2026  ·  Last updated: November 20, 2026<br/>Applies to MechItOne, MechItAll's optional shared account (the account pages and "Sign in with MechItOne" in our apps)</div>
+<div class="updated">Effective date: November 20, 2026  ·  Last updated: November 21, 2026<br/>Applies to MechItOne, MechItAll's optional shared account (the account pages and "Sign in with MechItOne" in our apps)</div>
 <div class="lede"><p>MechItOne is one optional account for MechItAll apps. It works like "Sign in with Google": it tells an app who you are, and nothing more. Each app keeps its own data, and nothing is shared between apps.</p>
-<p><strong>In short:</strong> MechItOne keeps your email, name and how you sign in, which apps you connected, and the devices you used it on (with city and country, never your exact location). An app you sign in to receives your MechItOne ID, name, email address and picture. There are no ads, no tracking and no selling of data. You can delete your MechItOne account at any time.</p></div>
+<p><strong>In short:</strong> MechItOne keeps your email, name and how you sign in, which apps you connected, and the devices you used it on (never your location). An app you sign in to receives your MechItOne ID, name, email address and picture. There are no ads, no tracking and no selling of data. You can delete your MechItOne account at any time.</p></div>
 </div>
 
 <section id="mechitone-privacy-who">
@@ -16,7 +16,7 @@
 <tbody>
 <tr><td>Account</td><td>Your email address, a password (stored only as a secure hash by Google Firebase Authentication) or the Google account you sign in with (its ID, email address, name and picture), your name, an optional picture, whether your email is confirmed, and when the account was created and last used.</td><td>To create your account and sign you in.</td></tr>
 <tr><td>Connected apps</td><td>Which MechItAll apps you signed in to with MechItOne, and when you first and last did.</td><td>So you can see and disconnect them on your account page.</td></tr>
-<tr><td>Devices</td><td>A random device ID kept in a cookie on the MechItOne site, a device name (for example "Android phone · Chrome", worked out from your browser, or the model name an app sends, such as "Pixel 8"), the approximate city and country of the connection, when the device was first and last used, and which apps were used on it. The city and country come from our hosting provider at the moment you sign in; we don't store your IP address with them.</td><td>So you can see where your account is used and spot a device you don't recognize.</td></tr>
+<tr><td>Devices</td><td>A random device ID kept in a cookie on the MechItOne site, a device name (for example "Android phone · Chrome", worked out from your browser, or the model name an app sends, such as "Pixel 8"), when the device was first and last used, and which apps were used on it. We don't store your location or your IP address with it.</td><td>So you can see where your account is used and spot a device you don't recognize.</td></tr>
 <tr><td>One-time sign-in codes</td><td>A random code and the details an app needs to finish signing you in (your account ID, name, email address and picture). Deleted after use or after 5 minutes.</td><td>To pass your sign-in safely from MechItOne back to the app.</td></tr>
 <tr><td>Technical data</td><td>Like any website, our providers process your IP address, browser type and request details when you use MechItOne, and keep short technical logs (up to 7 days).</td><td>To run MechItOne, keep it secure and fix problems.</td></tr>
 </tbody></table></div>
@@ -29,7 +29,7 @@
 
 <section id="mechitone-privacy-not">
 <h3>4. What we don't collect</h3>
-<p>No exact location, no contacts, no advertising IDs, no analytics or tracking, and no payment details. We don't sell or share your information for advertising.</p>
+<p>No location, no contacts, no advertising IDs, no analytics or tracking, and no payment details. We don't sell or share your information for advertising.</p>
 </section>
 
 <section id="mechitone-privacy-use">
@@ -42,7 +42,8 @@
 <ul>
 <li><strong>The apps you choose:</strong> only what is described in section 3, only when you sign in to them.</li>
 <li><strong>Google (Firebase Authentication):</strong> stores your account and handles passwords and Google sign-in, as our processor.</li>
-<li><strong>Cloudflare:</strong> hosts the MechItOne pages and stores connected apps, devices and sign-in codes, as our processor.</li>
+<li><strong>Cloudflare:</strong> runs MechItOne and stores connected apps, devices and sign-in codes, as our processor.</li>
+<li><strong>Turbify:</strong> hosts mechitall.com, including the account.mechitall.com address, which passes each request on to MechItOne without storing it, as our processor.</li>
 <li><strong>Authorities:</strong> only when the law requires it.</li>
 </ul>
 </section>
