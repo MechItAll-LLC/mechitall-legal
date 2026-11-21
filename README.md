@@ -13,6 +13,7 @@ Each document has a **general part** that applies to every app and a **section p
 | `content/apps/<id>/<doc>.html` | Each app's own section: `terms`, `privacy`, `delete`, and optional `guidelines`, `safety`, `child-safety`, `licenses` |
 | `assets/legal.css` | Styles |
 | `tools/build.py` | Builds the site into `public/` |
+| `tools/sync.py` | Re-imports an app's pages from its own repo (until that app switches; see `SWITCH.md`) |
 | `tools/migrate.py` | One-time import of the old per-app pages (already run; kept for reference) |
 | `public/` | The built site. Don't edit by hand; run the build. |
 

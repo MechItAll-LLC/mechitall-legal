@@ -1,7 +1,7 @@
 <div class="app-intro">
-<div class="updated">Effective date: November 1, 2026<br/>Applies to the Bewildoor game (com.bewildoor.game) on Android, Windows and in web browsers, and these web pages</div>
+<div class="updated">Effective date: November 11, 2026<br/>Applies to the Bewildoor game (com.bewildoor.game) on Android, Windows and in web browsers, and these web pages</div>
 <div class="lede"><p>Bewildoor is a puzzle game: you arrange clues and walk through matching doors. You can play the campaign alone, compete on leaderboards, or race friends live.</p>
-<p><strong>In short:</strong> you never give us your real name, email or location. The game creates a random ID and stores your chosen name, scores, replays and race positions so online features work. These are visible to other players. The game shows ads on room floors, but they're pictures stored in the game: no ad network, advertising ID or tracking is involved. There are no analytics, we don't sell your data, and you can delete it from inside the game.</p></div>
+<p><strong>In short:</strong> you never give us your real name, email or location. The game creates a random ID and stores your chosen name, scores, replays and race positions so online features work. These are visible to other players. The game shows ads on room floors, but they're pictures stored in the game: no ad network, advertising ID or tracking is involved. If the game crashes, it can send a crash report so we can fix the bug; you can turn that off under About. On Android you can also use Google Play Games for achievements. There are no analytics, we don't sell your data, and you can delete it from inside the game.</p></div>
 </div>
 
 <section id="bewildoor-privacy-who">
@@ -20,8 +20,12 @@
 <tr><td>Scores</td><td>Your best time or levels reached on each board, and the date and time.</td><td>Daily, Campaign, Endless and Timed leaderboards.</td></tr>
 <tr><td>Ghost replays</td><td>Your avatar's path through a maze on your best time, stored as time and position samples.</td><td>So other players can race a replay of the best run.</td></tr>
 <tr><td>Live Race data</td><td>Room code, your position in the maze during the race, whether you finished, your time, and a timestamp. The host's room also stores its settings and creation time.</td><td>To show racers to each other and show the standings.</td></tr>
-<tr><td>Technical data</td><td>Your IP address and user agent, processed by Google when the game connects to Firebase. Google's documentation says it keeps logged IP addresses for a few weeks for sign-in and a few days for the database.</td><td>To run and secure the online features.</td></tr>
+<tr><td>Technical data</td><td>Your IP address and user agent, processed by Google when the game connects to Firebase, including when it downloads its settings file at start (see below). Google's documentation says it keeps logged IP addresses for a few weeks for sign-in and a few days for the database.</td><td>To run and secure the online features.</td></tr>
+<tr><td>Crash reports (Android and Windows, on unless you turn them off)</td><td>When the game crashes or hits an error: what went wrong (error message and the place in the game's code), the game version, your device model, operating system and graphics chip, memory, screen size, and the time. No online ID, player name, IP address, screenshot or saved files are attached. Sent to Sentry, our crash-reporting provider.</td><td>To find and fix bugs.</td></tr>
+<tr><td>Google Play Games (Android, optional)</td><td>If you use Google Play Games, Google signs you in and tells the game your Play Games player ID and profile name, and stores the achievements you unlock and the scores sent to its leaderboards (levels won, Endless and Timed records). The game doesn't send these to us.</td><td>Achievements and Play Games leaderboards.</td></tr>
 </tbody></table></div>
+<p><strong>Settings file:</strong> when the game starts, it downloads a small public settings file from our database (for example which ads to show and a news line for the menu). This doesn't sign you in or create an online ID; only the technical data above is involved.</p>
+<p><strong>Rating prompt (Google Play version):</strong> after a few levels the game may ask Google Play to show its rating dialog. Google decides whether it appears, and any rating or review you give goes to Google Play under Google's terms, not to us.</p>
 <p><strong>Stored only on your device or in your browser</strong> (not sent to us): settings, level progress, personal bests, photos taken with the in-game phone, control layout, and a list of what you've uploaded so it can be deleted.</p>
 </section>
 
@@ -30,7 +34,7 @@
 <ul>
 <li>No email address, phone number, real name or payment details.</li>
 <li>No location. Your "position" means where your avatar is in the game's maze, not where you are.</li>
-<li>No advertising ID, or analytics, crash-reporting or tracking tools.</li>
+<li>No advertising ID, analytics or tracking tools. Crash reports (above) only describe errors and can be turned off.</li>
 <li>No contacts, device photos, files, camera or microphone access. The game's "phone camera" only captures the game itself.</li>
 <li>There's no chat.</li>
 </ul>
@@ -38,7 +42,7 @@
 
 <section id="bewildoor-privacy-use">
 <h3>4. How we use it, and legal bases</h3>
-<p>We use this information only to run the game's online features (performance of our contract with you) and to keep them fair and secure, including removing offensive names and cheating (legitimate interests). We don't sell or rent it, use it for advertising, or profile you.</p>
+<p>We use this information only to run the game's online features (performance of our contract with you) and to keep them fair and secure, including removing offensive names and cheating (legitimate interests). We use crash reports only to find and fix bugs (legitimate interests: a game that works); you can object at any time by turning them off under About. We don't sell or rent it, use it for advertising, or profile you.</p>
 </section>
 
 <section id="bewildoor-privacy-public">
@@ -48,18 +52,18 @@
 
 <section id="bewildoor-privacy-share">
 <h3>6. Who we share it with</h3>
-<p>Google is our service provider: Firebase Authentication, Realtime Database and Hosting store and process this data for us under Google's data processing terms. We may disclose information if the law requires it or to protect players' safety. We don't otherwise share personal information.</p>
+<p>Google is our service provider: Firebase Authentication, Realtime Database and Hosting store and process this data for us under Google's data processing terms. Sentry (Functional Software, Inc., USA) processes crash reports for us under its data processing terms. Google Play Games Services and the Google Play rating dialog are run by Google under <a href="https://policies.google.com/privacy">Google's privacy policy</a> when you use them. We may disclose information if the law requires it or to protect players' safety. We don't otherwise share personal information.</p>
 <p>If you download the game from itch.io or Google Play, those stores handle your account and download under their own privacy policies.</p>
 </section>
 
 <section id="bewildoor-privacy-ads">
 <h3>7. Ads</h3>
-<p>Bewildoor shows ads as pictures on the floor of some rooms, marked "AD". They currently promote other apps made by MechItAll LLC. The pictures are stored inside the game and can't be tapped. The level results screen lists the ads you saw, with links to those apps. A link opens the app or its Google Play page, only if you choose it, and Google's privacy policy then applies to the Play page. Showing ads and counting them on the results screen sends no information to us or anyone else, and we don't use an ad network, an advertising ID, or personalized ads. If we change how ads work, we'll update this policy first.</p>
+<p>Bewildoor shows ads as pictures on the floor of some rooms, marked "AD". They currently promote other apps made by MechItAll LLC. The pictures are stored inside the game and can't be tapped. The level results screen lists the ads you saw, with links to those apps. A link opens the app, its Google Play page or its website, only if you choose it, and that page's own privacy policy then applies. The settings file can change which of our apps are shown and where their links go. Ads only promote apps suitable for Bewildoor's players (13 and over). Showing ads and counting them on the results screen sends no information to us or anyone else, and we don't use an ad network, an advertising ID, or personalized ads. If we change how ads work, we'll update this policy first.</p>
 </section>
 
 <section id="bewildoor-privacy-keep">
 <h3>8. How long we keep it</h3>
-<p>We keep your online ID, name, scores and replays until you delete them. Race room data has no automatic expiry yet: it stays until you delete your data or we clear old rooms. After deletion, Google removes account data from its backups within 180 days, according to its documentation. See <a href="{{link:delete}}">Delete your data</a>.</p>
+<p>We keep your online ID, name, scores and replays until you delete them. Race room data has no automatic expiry yet: it stays until you delete your data or we clear old rooms. After deletion, Google removes account data from its backups within 180 days, according to its documentation. Sentry deletes crash reports automatically after 90 days at most. Google keeps Play Games data under its own policy until you delete it in your Play Games account. See <a href="{{link:delete}}">Delete your data</a>.</p>
 </section>
 
 <section id="bewildoor-privacy-rights">
@@ -68,6 +72,8 @@
 <li><strong>Delete:</strong> About → <em>Delete my online data</em> in the main menu, or the <a href="{{link:delete}}">email route</a> if you can't open the game.</li>
 <li><strong>Correct:</strong> change your name in the main menu. It updates the next time you set a new best or join a race.</li>
 <li><strong>Ghosts:</strong> the Ghosts button only controls whether you see replays. Your own best-time replay is still uploaded; deleting your data removes it.</li>
+<li><strong>Crash reports:</strong> About → <em>Send crash reports</em> turns them off at once.</li>
+<li><strong>Google Play Games:</strong> manage or delete your Play Games profile, achievements and scores in the Google Play Games app or at <a href="https://myaccount.google.com/">myaccount.google.com</a>.</li>
 <li><strong>Access and portability:</strong> email us for a copy of your data.</li>
 </ul>
 <p>Depending on where you live (for example the EU, UK, California or Brazil), you may have further rights, including to object to or restrict processing and to complain to your data protection authority. To use any right, email <a href="mailto:contact@mechitall.com">contact@mechitall.com</a>; we answer within 30 days and won't treat you differently for using your rights.</p>
@@ -80,7 +86,7 @@
 
 <section id="bewildoor-privacy-transfers">
 <h3>11. Security and international transfers</h3>
-<p>Data is sent encrypted (HTTPS) and protected by access rules so players can change only their own entries. Google may process data in the United States and other countries; where required, we rely on the standard contractual clauses in Google's terms.</p>
+<p>Data is sent encrypted (HTTPS) and protected by access rules so players can change only their own entries. Google and Sentry may process data in the United States and other countries; where required, we rely on the standard contractual clauses in their terms.</p>
 </section>
 
 <section id="bewildoor-privacy-changes">

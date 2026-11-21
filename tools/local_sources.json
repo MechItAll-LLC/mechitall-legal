@@ -1,0 +1,10 @@
+{
+  "_comment": "Where each app's own legal pages are on this machine, for tools/sync.py. Same files as sources.json.",
+  "artograffi": "C:/dev/artograffi/public",
+  "bewildoor": "C:/dev/bewildoor/hosting/public",
+  "low-flying-ducks": "C:/dev/low_flying_ducks/hosting/public",
+  "polyloqui": "C:/dev/polyloqui/public",
+  "questeryng": "C:/dev/questeryng/hosting/public",
+  "holds": "C:/dev/holds/hosting/public",
+  "bgrc": "C:/dev/bgrc-releases"
+}

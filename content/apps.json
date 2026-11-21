@@ -51,7 +51,7 @@
       "id": "polyloqui",
       "name": "Polyloqui",
       "about": "Voice rooms, live captions and translation for loud places",
-      "package": "",
+      "package": "com.polyloqui.app",
       "platforms": "Android, web",
       "min_age": 13,
       "home": "https://earshot-9vub.onrender.com/"
@@ -60,7 +60,7 @@
       "id": "questeryng",
       "name": "Questeryng",
       "about": "Social app for adults to meet people nearby through activities and side quests",
-      "package": "",
+      "package": "com.sidequestapp.sidequest",
       "platforms": "Android, web",
       "min_age": 18,
       "home": "https://questeryng.web.app/",
