@@ -1,5 +1,5 @@
 <div class="app-intro">
-<div class="updated">Effective date: November 11, 2026<br/>Applies to the Bewildoor game (com.bewildoor.game) on Android, Windows and in web browsers, and these web pages</div>
+<div class="updated">Effective date: November 12, 2026<br/>Applies to the Bewildoor game (com.bewildoor.game) on Android, Windows and in web browsers, and these web pages</div>
 <div class="lede"><p>Bewildoor is a puzzle game: you arrange clues and walk through matching doors. You can play the campaign alone, compete on leaderboards, or race friends live.</p>
 <p><strong>In short:</strong> you never give us your real name, email or location. The game creates a random ID and stores your chosen name, scores, replays and race positions so online features work. These are visible to other players. The game shows ads on room floors, but they're pictures stored in the game: no ad network, advertising ID or tracking is involved. If the game crashes, it can send a crash report so we can fix the bug; you can turn that off under About. On Android you can also use Google Play Games for achievements. There are no analytics, we don't sell your data, and you can delete it from inside the game.</p></div>
 </div>
@@ -17,16 +17,17 @@
 <tbody>
 <tr><td>Online ID</td><td>A random ID created through Firebase anonymous sign-in. It isn't linked to your name, email or Google account.</td><td>To keep your scores and let only you change them.</td></tr>
 <tr><td>Player name</td><td>The name you type, up to 16 characters ("Player" if you leave it blank). Please don't use your real name.</td><td>Shown on leaderboards and in race rooms.</td></tr>
-<tr><td>Scores</td><td>Your best time or levels reached on each board, and the date and time.</td><td>Daily, Campaign, Endless and Timed leaderboards.</td></tr>
+<tr><td>Scores</td><td>Your best time or levels reached on each board, and the date and time.</td><td>Daily, Weekly, Campaign, Endless and Timed leaderboards.</td></tr>
 <tr><td>Ghost replays</td><td>Your avatar's path through a maze on your best time, stored as time and position samples.</td><td>So other players can race a replay of the best run.</td></tr>
-<tr><td>Live Race data</td><td>Room code, your position in the maze during the race, whether you finished, your time, and a timestamp. The host's room also stores its settings and creation time.</td><td>To show racers to each other and show the standings.</td></tr>
+<tr><td>Community levels you publish</td><td>The level's name and layout (rooms, doors, route, objects, difficulty estimate, time limit and allowed modes), your player name and online ID as its creator, and when you published it. A level you're only building or playtesting stays on your device.</td><td>So other players can find and play your levels.</td></tr>
+<tr><td>Live Race and Co-op data</td><td>Room code, your position in the maze during the race, whether you finished, your time, and a timestamp. In Co-op, also the spot in the maze you last marked with Ping. The host's room also stores its settings (including whether it's a race or co-op) and creation time.</td><td>To show players in a room to each other and show the standings.</td></tr>
 <tr><td>Technical data</td><td>Your IP address and user agent, processed by Google when the game connects to Firebase, including when it downloads its settings file at start (see below). Google's documentation says it keeps logged IP addresses for a few weeks for sign-in and a few days for the database.</td><td>To run and secure the online features.</td></tr>
 <tr><td>Crash reports (Android and Windows, on unless you turn them off)</td><td>When the game crashes or hits an error: what went wrong (error message and the place in the game's code), the game's last few log messages before it, the game version, your device model, operating system, graphics chip, memory, screen size and language setting, and the time. No online ID, player name, device identifier, IP address, location, screenshot or saved files are attached, and the game removes the identifiers the reporting library would otherwise add. Sent to Sentry, our crash-reporting provider.</td><td>To find and fix bugs.</td></tr>
 <tr><td>Google Play Games (Android, optional)</td><td>If you use Google Play Games, Google signs you in and tells the game your Play Games player ID and profile name, and stores the achievements you unlock and the scores sent to its leaderboards (levels won, Endless and Timed records). The game doesn't send these to us.</td><td>Achievements and Play Games leaderboards.</td></tr>
 </tbody></table></div>
 <p><strong>Settings file:</strong> when the game starts, it downloads a small public settings file from our database (for example which ads to show and a news line for the menu). This doesn't sign you in or create an online ID; only the technical data above is involved.</p>
 <p><strong>Rating prompt (Google Play version):</strong> after a few levels the game may ask Google Play to show its rating dialog. Google decides whether it appears, and any rating or review you give goes to Google Play under Google's terms, not to us.</p>
-<p><strong>Stored only on your device or in your browser</strong> (not sent to us): settings, level progress, personal bests, photos taken with the in-game phone, control layout, and a list of what you've uploaded so it can be deleted.</p>
+<p><strong>Stored only on your device or in your browser</strong> (not sent to us): settings (including language, text size and contrast), level progress, personal bests, achievements, daily streak, chosen hat and door style, photos taken with the in-game phone, control layout, and a list of what you've uploaded so it can be deleted. Level editor codes are made on your device and shared only if you share them yourself.</p>
 </section>
 
 <section id="bewildoor-privacy-not">
@@ -47,7 +48,7 @@
 
 <section id="bewildoor-privacy-public">
 <h3>5. What other players can see</h3>
-<p>Anyone playing online can see your player name, scores and online ID on the leaderboards, and download your ghost replay. Anyone with a room's code can see your name, position, finish status and time in that race. The game doesn't display online IDs, but they are part of the data it receives.</p>
+<p>Anyone playing online can see your player name, scores and online ID on the leaderboards, and download your ghost replay. Levels you publish, with your player name, are visible to and playable by everyone. Anyone with a room's code can see your name, position, finish status and time in that race, and in Co-op the spots you ping. The game doesn't display online IDs, but they are part of the data it receives.</p>
 </section>
 
 <section id="bewildoor-privacy-share">
@@ -63,7 +64,7 @@
 
 <section id="bewildoor-privacy-keep">
 <h3>8. How long we keep it</h3>
-<p>We keep your online ID, name, scores and replays until you delete them. Race room data has no automatic expiry yet: it stays until you delete your data or we clear old rooms. After deletion, Google removes account data from its backups within 180 days, according to its documentation. Sentry deletes crash reports automatically after 90 days at most. Google keeps Play Games data under its own policy until you delete it in your Play Games account. See <a href="{{link:delete}}">Delete your data</a>.</p>
+<p>We keep your online ID, name, scores, replays and published levels until you delete them. Race room data has no automatic expiry yet: it stays until you delete your data or we clear old rooms. After deletion, Google removes account data from its backups within 180 days, according to its documentation. Sentry deletes crash reports automatically after 90 days at most. Google keeps Play Games data under its own policy until you delete it in your Play Games account. See <a href="{{link:delete}}">Delete your data</a>.</p>
 </section>
 
 <section id="bewildoor-privacy-rights">
@@ -72,6 +73,7 @@
 <li><strong>Delete:</strong> About → <em>Delete my online data</em> in the main menu, or the <a href="{{link:delete}}">email route</a> if you can't open the game.</li>
 <li><strong>Correct:</strong> change your name in the main menu. It updates the next time you set a new best or join a race.</li>
 <li><strong>Ghosts:</strong> the Ghosts button only controls whether you see replays. Your own best-time replay is still uploaded; deleting your data removes it.</li>
+<li><strong>Community levels:</strong> delete one of your levels with its <em>Delete</em> button in the Community list; deleting your online data removes all of them.</li>
 <li><strong>Crash reports:</strong> About → <em>Send crash reports</em> turns them off at once.</li>
 <li><strong>Google Play Games:</strong> manage or delete your Play Games profile, achievements and scores in the Google Play Games app or at <a href="https://myaccount.google.com/">myaccount.google.com</a>.</li>
 <li><strong>Access and portability:</strong> email us for a copy of your data.</li>
