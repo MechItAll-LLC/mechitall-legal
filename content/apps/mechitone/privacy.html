@@ -1,5 +1,5 @@
 <div class="app-intro">
-<div class="updated">Effective date: November 20, 2026  ·  Last updated: November 23, 2026<br/>Applies to MechItOne, MechItAll's optional shared account (the account pages, the MechItAll community and "Sign in with MechItOne" in our apps)</div>
+<div class="updated">Effective date: November 20, 2026  ·  Last updated: November 24, 2026<br/>Applies to MechItOne, MechItAll's optional shared account (the account pages, the MechItAll community and "Sign in with MechItOne" in our apps)</div>
 <div class="lede"><p>MechItOne is one optional account for MechItAll apps. It works like "Sign in with Google": it tells an app who you are, and nothing more. Each app keeps its own data, and nothing is shared between apps.</p>
 <p><strong>In short:</strong> MechItOne keeps your email, name and how you sign in, which apps you connected, and the devices you used it on (never your location). An app you sign in to receives your MechItOne ID, name, email address and picture. If you use the community, the public name you choose and what you post are public; your email never is. There are no ads, no tracking and no selling of data. You can delete your MechItOne account, and everything you posted, at any time.</p></div>
 </div>
@@ -16,6 +16,7 @@
 <tbody>
 <tr><td>Account</td><td>Your email address, a password (stored only as a secure hash by Google Firebase Authentication) or the Google account you sign in with (its ID, email address, name and picture), your name, an optional picture, whether your email is confirmed, and when the account was created and last used.</td><td>To create your account and sign you in.</td></tr>
 <tr><td>Connected apps</td><td>Which MechItAll apps you signed in to with MechItOne, and when you first and last did.</td><td>So you can see and disconnect them on your account page.</td></tr>
+<tr><td>Linked accounts</td><td>If you sign in with or link Facebook, Discord or Reddit: that account's ID and display name (Facebook through Google Firebase Authentication, with the email address Facebook shares if you allow it). We ask for nothing else: no friends lists, posts or messages.</td><td>So you can sign in with that account.</td></tr>
 <tr><td>Devices</td><td>A random device ID kept in a cookie on the MechItOne site, a device name (for example "Android phone · Chrome", worked out from your browser, or the model name an app sends, such as "Pixel 8"), when the device was first and last used, and which apps were used on it. We don't store your location or your IP address with it.</td><td>So you can see where your account is used and spot a device you don't recognize.</td></tr>
 <tr><td>Profile (optional)</td><td>The avatar you pick from our drawn set (you can't upload pictures), a short bio you write, whether the apps you use are shown on your profile, and your achievements (which ones, when you earned them, and your points and title). Achievements are worked out from what you do here: posts, ideas, votes, comments on apps, chat messages, the apps you connect and how long you've been a member.</td><td>To show your profile, achievements and the community leaderboard.</td></tr>
 <tr><td>Chat rooms (optional)</td><td>The messages you write in the community chat rooms, with the time and room. Kept for 30 days, then deleted. The same filter, reporting and moderation as posts apply.</td><td>To run the chat rooms and keep them safe.</td></tr>
@@ -27,7 +28,7 @@
 
 <section id="mechitone-privacy-apps">
 <h3>3. What apps receive</h3>
-<p>When you choose "Sign in with MechItOne" in an app and press Continue, that app receives your MechItOne account ID, your public name from your MechItOne profile (or your account name if you haven't chosen one), your email address (and whether it is confirmed) and your picture (the avatar you picked, as an image on mechitall.com, or your account picture), signed by MechItOne so the app can check it is genuine. A new account in the app starts with that name and avatar; you can change them inside the app at any time, and an app where you already have an account keeps its own. An app never sees your password, your other connected apps or your devices. What each app keeps is described in that app's privacy policy in our <a href="https://mechitall.com/legal/">Legal Center</a>.</p>
+<p>When you choose "Sign in with MechItOne" in an app and press Continue, that app receives your MechItOne account ID, your public name from your MechItOne profile (or your account name if you haven't chosen one), your email address (if your account has one, and whether it is confirmed) and your picture (the avatar you picked, as an image on mechitall.com, or your account picture), signed by MechItOne so the app can check it is genuine. A new account in the app starts with that name and avatar; you can change them inside the app at any time, and an app where you already have an account keeps its own. An app never sees your password, your other connected apps or your devices. What each app keeps is described in that app's privacy policy in our <a href="https://mechitall.com/legal/">Legal Center</a>.</p>
 </section>
 
 <section id="mechitone-privacy-community">
@@ -50,6 +51,7 @@
 <ul>
 <li><strong>The apps you choose:</strong> only what is described in section 3, only when you sign in to them.</li>
 <li><strong>Google (Firebase Authentication):</strong> stores your account and handles passwords and Google sign-in, as our processor.</li>
+<li><strong>Meta (Facebook), Discord and Reddit:</strong> only if you choose to sign in with or link that account; they confirm who you are and share the ID and name described above. Their own privacy policies apply to your account there.</li>
 <li><strong>Cloudflare:</strong> runs MechItOne and stores connected apps, devices, sign-in codes and community posts, votes and reports, as our processor.</li>
 <li><strong>Everyone:</strong> what you post in the community and your public name, as described in section 3a.</li>
 <li><strong>Turbify:</strong> hosts mechitall.com, including the account.mechitall.com address, which passes each request on to MechItOne without storing it, as our processor.</li>
@@ -69,7 +71,7 @@
 
 <section id="mechitone-privacy-rights">
 <h3>9. Your rights and controls</h3>
-<p>On your MechItOne account page you can see your details, change your name, link or remove a Google sign-in, see and disconnect apps, see and remove devices, and delete your account. In the community you can change your public name, delete your posts and take back your votes (see <a href="{{link:delete}}">Delete your account</a>). Deleting MechItOne does not delete your accounts inside the apps; delete those in each app. You can also email us to access, correct or delete your data.</p>
+<p>On your MechItOne account page you can see your details, change your name, link or remove a Google, Facebook, Discord or Reddit sign-in, see and disconnect apps, see and remove devices, download a copy of your data, and delete your account. In the community you can change your public name, delete your posts and take back your votes (see <a href="{{link:delete}}">Delete your account</a>). Deleting MechItOne does not delete your accounts inside the apps; delete those in each app. You can also email us to access, correct or delete your data.</p>
 </section>
 
 <section id="mechitone-privacy-children">
